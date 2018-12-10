@@ -1,8 +1,16 @@
-<div *ngIf = "user$">
-  <h1>{{user$.name}}</h1>
-  <ul>
-    <li><strong>Username:</strong>{{ user$.username }}</li>
-    <li><strong>Email:</strong>{{ user$.email }}</li>
-    <li><strong>Phone:</strong>{{ user$.phone }}</li>
-  </ul>
+<div class="container-fluid">
+  <h1>User Details</h1>
+  <div class="row">
+    <ul  class="col-md-6 col-xl-4 col-sm-12">
+      <div *ngIf = "user$">
+        <div class="user">
+          <li><a>{{user$.name}}</a></li>
+          <li><strong>Username:</strong>{{ user$.username }}</li>
+          <li><strong>Email:</strong>{{ user$.email }}</li>
+          <li><strong>Phone:</strong>{{ user$.phone }}</li>
+        </div>
+      </div>
+    </ul>
+  </div>
 </div>
+  
